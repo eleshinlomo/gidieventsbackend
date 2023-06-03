@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Hello {{name}}, This is a test page for Gidievent backend.</h3>
+<h2>ENTER 2 VALUES TO ADD</h2>
+
+<form action="add">
+    Value 1: <input type="text" name="value1" />
+    Value 2: <input type="text" name="value2" />
+    <button type="submit">Add</button>
+</form>
+
+Result: {{result}}
+{% endblock %}
